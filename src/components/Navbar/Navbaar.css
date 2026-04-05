@@ -1,0 +1,148 @@
+
+.navbaar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height:70px;
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+
+.navbaar p{
+    height: 290px;
+    width: 290px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-image: url(/src/assets/CryptoPoint_transparent.png);
+    background-size: cover;
+}
+
+.navbaar li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color: rgb(182, 6, 6);
+}
+
+.navbaar ul{
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    font-size: 22px;
+}
+
+
+.navbaar select{
+   height: 30px; 
+   width: 60px;
+   border-radius: 5px;
+   margin-right: 20px;
+   background-color: transparent;
+   color: white;
+   font-size: 16px;
+}
+
+.options{
+   color: rgb(255, 252, 252);
+   background-color: black;
+}
+.rightnavbaar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbaar button{
+    height: 35px; 
+    width: 90px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    font-size: 17.2px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgb(97, 11, 11);
+}
+
+.navbaar button:hover{
+    background-color: brown;
+    transition-duration: 1s;
+}
+
+.navbaar button img{
+    height: 20px;
+    width: 20px;
+   cursor: pointer;
+}
+
+@media(max-width:1023px){
+    .navbaar{
+        padding: 10px 1%;
+    }
+    .navbaar p{
+        height: 250px;
+        width: 250px;
+        margin-left: 5px;
+    }
+    .navbaar ul{
+        gap: 27px;
+        font-size: 19px;
+        margin-left: -40px;
+    }
+    
+    .navbaar select{
+        height: 28px; 
+        width: 55px;
+        border-radius: 5px;
+        font-size: 15px;
+     }
+    .navbaar button{
+        height: 30px; 
+    }
+     .navbaar button img{
+        width: 18px;
+        height: 18px;
+     }
+    
+}
+
+
+
+
+@media(max-width:760px){
+    .navbaar{
+        padding: 20px 5%;
+    }
+    .navbaar p{
+        height: 200px;
+        width: 200px;
+        margin-left: -23px;
+        margin-right: -10px;
+    }
+     .navbaar ul{
+        display: none;
+     }
+     .navbaar select{
+        height: 26px; 
+        width: 50px;
+        border-radius: 5px;
+        margin-right: 10px;
+        font-size: 13px;
+     }
+     .navbaar button{
+        height: 28px; 
+        width: 90px;
+        border-radius: 10px;
+        font-size: 15px;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+     .navbaar button img{
+        width: 17px;
+        height: 17px;
+     }
+}
